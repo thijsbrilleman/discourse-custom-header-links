@@ -7,7 +7,7 @@ customHeaderLinks.split("|").map(i => {
     linkTitle = seg[1],
     linkHref = seg[2],
     deviceClass = "." + seg[3],
-    linkTarget = seg[4] === "self" ? "" : "_blank",
+    linkTarget = seg[4] === "self" ? "" : "_top",
     keepOnScrollClass = seg[5] === "keep" ? ".keep" : "";
 
   api.decorateWidget("header-buttons:before", helper => {
